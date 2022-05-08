@@ -7,5 +7,5 @@ RUN rm -rf *
 RUN git clone https://github.com/hamzamaan/logistics-company-website.git
 RUN mv logistics-company-website/* .
 RUN rmdir logistics-company-website
-
+EXPOSE 8081
 CMD ["nginx", "-g", "daemon off;"]
